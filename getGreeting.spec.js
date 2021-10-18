@@ -7,8 +7,13 @@ describe('getGreeting', () => {
     expect(result).toBe('Hello you!')
   })
 
-  it('returns "Hello Jane" when called with getGreeting("Jane")', () => {
+  it('returns "Hello Jane!" when called with getGreeting("Jane")', () => {
     const result = getGreeting('Jane')
     expect(result).toBe('Hello Jane!')
+  })
+
+  it('returns "Hello Coach!" when called with getGreeting("Jerry")', () => {
+    const result = getGreeting('Jerry')
+    expect(result).toBe('Hello Coach!')
   })
 })
