@@ -3,11 +3,11 @@ export function isOdd(number) {
 }
 
 export function isEven(number) {
-  return number % 2 === 0
+  return !isOdd(number)
 }
 
 export function isDivisibleBy3(number) {
-  return Math.abs(number % 3) === 0
+  return isDivisibleBy(number, 3)
 }
 
 export function isDivisibleBy(number, divisor) {
