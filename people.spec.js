@@ -193,6 +193,7 @@ describe('people', () => {
     })
   })
 
+  // hint: implementation should use Array.prototype.some
   describe('isAnyoneOlderThan', () => {
     it('returns true, if any person is older', () => {
       const result = isAnyoneOlderThan(people, 30)
